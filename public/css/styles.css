@@ -58,7 +58,6 @@ nav a:hover {
 }
 
 .slider{
-    display: flex;
     width: 100%;
     height: 100%;
     background-image: url(../images/background.png);
@@ -72,6 +71,8 @@ nav a:hover {
 }
 
 .judul1{
+    display: flex;
+    position: absolute;
     font-size: 90px;
     color: white;
     padding: 10px 75px;
@@ -174,23 +175,17 @@ nav a:hover {
 }
 
 #carousel {
-    /*Set the container carousel to be fullscreen. If you change the size
-    of your carousel make sure to also change the size of your slides*/
     height: 100vh;
     width: 100vw;
-    /*Prevent images from wrapping*/
     white-space: nowrap;
     overflow: hidden;
   }
   
   .slide-image {
-    /*Make the image container full screen*/
     width: 100vw;
     height: 100vh;
-    /*Make the image cover the the screen and center it*/
     background-position: center;
     background-size: cover;
-    /*Make images inline with each other*/
     display: inline-block;
   }
   
